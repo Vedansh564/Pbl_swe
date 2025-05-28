@@ -6,7 +6,7 @@ Huffman::Huffman() {}
 void Huffman::buildFrequencyTable(string& inputFilePath) {
     ifstream inFile(inputFilePath, ios::binary);
     if (!inFile) {
-        cout << "Error opening file: " << inputFilePath << "\n";
+        cout << "Error opening file: " << inputFilePath << endl;
         return;
     }
     char ch;
